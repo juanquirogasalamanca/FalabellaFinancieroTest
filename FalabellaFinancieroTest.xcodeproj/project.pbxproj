@@ -9,11 +9,21 @@
 /* Begin PBXBuildFile section */
 		51336188246B44B800ADE539 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51336187246B44B800ADE539 /* AppDelegate.swift */; };
 		5133618A246B44B800ADE539 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51336189246B44B800ADE539 /* SceneDelegate.swift */; };
-		5133618C246B44B800ADE539 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5133618B246B44B800ADE539 /* ViewController.swift */; };
+		5133618C246B44B800ADE539 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5133618B246B44B800ADE539 /* BaseViewController.swift */; };
 		5133618F246B44B800ADE539 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5133618D246B44B800ADE539 /* Main.storyboard */; };
 		51336191246B44B900ADE539 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51336190246B44B900ADE539 /* Assets.xcassets */; };
 		51336194246B44B900ADE539 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51336192246B44B900ADE539 /* LaunchScreen.storyboard */; };
 		5133619F246B44BA00ADE539 /* FalabellaFinancieroTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5133619E246B44BA00ADE539 /* FalabellaFinancieroTestTests.swift */; };
+		513361B1246B4C8F00ADE539 /* ViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513361B0246B4C8F00ADE539 /* ViewCoordinator.swift */; };
+		513361B3246B4CA500ADE539 /* PresenterCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513361B2246B4CA500ADE539 /* PresenterCoordinator.swift */; };
+		513361B5246B4E8100ADE539 /* MVP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513361B4246B4E8100ADE539 /* MVP.swift */; };
+		513361B8246B56E100ADE539 /* UIApplicationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513361B7246B56E100ADE539 /* UIApplicationProtocol.swift */; };
+		513361BB246B590600ADE539 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513361BA246B590600ADE539 /* LoginPresenter.swift */; };
+		513361BE246B592E00ADE539 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513361BC246B592E00ADE539 /* LoginViewController.swift */; };
+		513361BF246B592E00ADE539 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 513361BD246B592E00ADE539 /* LoginViewController.xib */; };
+		513361C4246B62DA00ADE539 /* DataScenePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513361C1246B62DA00ADE539 /* DataScenePresenter.swift */; };
+		513361C5246B62DA00ADE539 /* DataSceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513361C2246B62DA00ADE539 /* DataSceneViewController.swift */; };
+		513361C6246B62DA00ADE539 /* DataSceneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 513361C3246B62DA00ADE539 /* DataSceneViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,7 +40,7 @@
 		51336184246B44B800ADE539 /* FalabellaFinancieroTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FalabellaFinancieroTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51336187246B44B800ADE539 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		51336189246B44B800ADE539 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5133618B246B44B800ADE539 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5133618B246B44B800ADE539 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		5133618E246B44B800ADE539 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		51336190246B44B900ADE539 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		51336193246B44B900ADE539 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -38,6 +48,16 @@
 		5133619A246B44BA00ADE539 /* FalabellaFinancieroTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FalabellaFinancieroTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5133619E246B44BA00ADE539 /* FalabellaFinancieroTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FalabellaFinancieroTestTests.swift; sourceTree = "<group>"; };
 		513361A0246B44BA00ADE539 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		513361B0246B4C8F00ADE539 /* ViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCoordinator.swift; sourceTree = "<group>"; };
+		513361B2246B4CA500ADE539 /* PresenterCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterCoordinator.swift; sourceTree = "<group>"; };
+		513361B4246B4E8100ADE539 /* MVP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVP.swift; sourceTree = "<group>"; };
+		513361B7246B56E100ADE539 /* UIApplicationProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplicationProtocol.swift; sourceTree = "<group>"; };
+		513361BA246B590600ADE539 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		513361BC246B592E00ADE539 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		513361BD246B592E00ADE539 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		513361C1246B62DA00ADE539 /* DataScenePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataScenePresenter.swift; sourceTree = "<group>"; };
+		513361C2246B62DA00ADE539 /* DataSceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSceneViewController.swift; sourceTree = "<group>"; };
+		513361C3246B62DA00ADE539 /* DataSceneViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DataSceneViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,9 +99,9 @@
 		51336186246B44B800ADE539 /* FalabellaFinancieroTest */ = {
 			isa = PBXGroup;
 			children = (
+				513361A9246B44DC00ADE539 /* Scenes */,
 				51336187246B44B800ADE539 /* AppDelegate.swift */,
 				51336189246B44B800ADE539 /* SceneDelegate.swift */,
-				5133618B246B44B800ADE539 /* ViewController.swift */,
 				5133618D246B44B800ADE539 /* Main.storyboard */,
 				51336190246B44B900ADE539 /* Assets.xcassets */,
 				51336192246B44B900ADE539 /* LaunchScreen.storyboard */,
@@ -97,6 +117,48 @@
 				513361A0246B44BA00ADE539 /* Info.plist */,
 			);
 			path = FalabellaFinancieroTestTests;
+			sourceTree = "<group>";
+		};
+		513361A9246B44DC00ADE539 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				513361C0246B62B900ADE539 /* DataList */,
+				513361B9246B583D00ADE539 /* Login */,
+				513361B6246B56C900ADE539 /* Common */,
+				5133618B246B44B800ADE539 /* BaseViewController.swift */,
+				513361B0246B4C8F00ADE539 /* ViewCoordinator.swift */,
+				513361B2246B4CA500ADE539 /* PresenterCoordinator.swift */,
+				513361B4246B4E8100ADE539 /* MVP.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		513361B6246B56C900ADE539 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				513361B7246B56E100ADE539 /* UIApplicationProtocol.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		513361B9246B583D00ADE539 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				513361BA246B590600ADE539 /* LoginPresenter.swift */,
+				513361BC246B592E00ADE539 /* LoginViewController.swift */,
+				513361BD246B592E00ADE539 /* LoginViewController.xib */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		513361C0246B62B900ADE539 /* DataList */ = {
+			isa = PBXGroup;
+			children = (
+				513361C1246B62DA00ADE539 /* DataScenePresenter.swift */,
+				513361C2246B62DA00ADE539 /* DataSceneViewController.swift */,
+				513361C3246B62DA00ADE539 /* DataSceneViewController.xib */,
+			);
+			path = DataList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,7 +242,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				513361BF246B592E00ADE539 /* LoginViewController.xib in Resources */,
 				51336194246B44B900ADE539 /* LaunchScreen.storyboard in Resources */,
+				513361C6246B62DA00ADE539 /* DataSceneViewController.xib in Resources */,
 				51336191246B44B900ADE539 /* Assets.xcassets in Resources */,
 				5133618F246B44B800ADE539 /* Main.storyboard in Resources */,
 			);
@@ -200,9 +264,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5133618C246B44B800ADE539 /* ViewController.swift in Sources */,
+				513361BE246B592E00ADE539 /* LoginViewController.swift in Sources */,
+				513361BB246B590600ADE539 /* LoginPresenter.swift in Sources */,
+				5133618C246B44B800ADE539 /* BaseViewController.swift in Sources */,
+				513361C5246B62DA00ADE539 /* DataSceneViewController.swift in Sources */,
+				513361B5246B4E8100ADE539 /* MVP.swift in Sources */,
 				51336188246B44B800ADE539 /* AppDelegate.swift in Sources */,
+				513361B3246B4CA500ADE539 /* PresenterCoordinator.swift in Sources */,
 				5133618A246B44B800ADE539 /* SceneDelegate.swift in Sources */,
+				513361C4246B62DA00ADE539 /* DataScenePresenter.swift in Sources */,
+				513361B1246B4C8F00ADE539 /* ViewCoordinator.swift in Sources */,
+				513361B8246B56E100ADE539 /* UIApplicationProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

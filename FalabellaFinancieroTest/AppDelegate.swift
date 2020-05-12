@@ -35,3 +35,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+extension UIWindow {
+    func setupRootViewController() {
+        self.rootViewController = ViewCoordinator.instance.rootViewController
+    }
+}
+
