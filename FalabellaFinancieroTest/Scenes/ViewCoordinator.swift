@@ -11,8 +11,8 @@ import UIKit
 
 protocol ViewCoordinatorProtocol: class {
     func goToLogin()
-    func goToHomeList()
-    func doToDetail()
+    func goToDataScene()
+    func doToDetailScene()
 }
 
 protocol Router {
@@ -52,7 +52,7 @@ extension ViewCoordinator {
 
 extension ViewCoordinator: Router {
     func successLogin() {
-//        TODO
+        goToDataScene()
     }
     
     func selectItemList() {
@@ -67,11 +67,11 @@ extension ViewCoordinator: ViewCoordinatorProtocol {
         goTo(controller: LoginViewController())
     }
     
-    func goToHomeList() {
-//        TODO
+    func goToDataScene() {
+        goTo(controller: DataSceneViewController())
     }
     
-    func doToDetail() {
+    func doToDetailScene() {
 //        ToDo
     }
 }
