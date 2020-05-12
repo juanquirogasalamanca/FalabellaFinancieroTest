@@ -1,0 +1,6 @@
+framework module Pods_FalabellaFinancieroTest {
+  umbrella header "Pods-FalabellaFinancieroTest-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3560DB0BA1B200CF61FA1864 /* Pods_FalabellaFinancieroTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0B8076389B25B6F9C05937A /* Pods_FalabellaFinancieroTestTests.framework */; };
 		51336188246B44B800ADE539 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51336187246B44B800ADE539 /* AppDelegate.swift */; };
 		5133618A246B44B800ADE539 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51336189246B44B800ADE539 /* SceneDelegate.swift */; };
 		5133618C246B44B800ADE539 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5133618B246B44B800ADE539 /* BaseViewController.swift */; };
@@ -23,6 +24,7 @@
 		513361C4246B62DA00ADE539 /* DataScenePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513361C1246B62DA00ADE539 /* DataScenePresenter.swift */; };
 		513361C5246B62DA00ADE539 /* DataSceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513361C2246B62DA00ADE539 /* DataSceneViewController.swift */; };
 		513361C6246B62DA00ADE539 /* DataSceneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 513361C3246B62DA00ADE539 /* DataSceneViewController.xib */; };
+		785FE58ED8980161D189B03F /* Pods_FalabellaFinancieroTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A0E58323AA71600BFACD19A /* Pods_FalabellaFinancieroTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0F4C0AEBB42FD90AF6042C3C /* Pods-FalabellaFinancieroTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FalabellaFinancieroTestTests.debug.xcconfig"; path = "Target Support Files/Pods-FalabellaFinancieroTestTests/Pods-FalabellaFinancieroTestTests.debug.xcconfig"; sourceTree = "<group>"; };
+		36DD5E0153F3E1118F734467 /* Pods-FalabellaFinancieroTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FalabellaFinancieroTestTests.release.xcconfig"; path = "Target Support Files/Pods-FalabellaFinancieroTestTests/Pods-FalabellaFinancieroTestTests.release.xcconfig"; sourceTree = "<group>"; };
 		51336184246B44B800ADE539 /* FalabellaFinancieroTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FalabellaFinancieroTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51336187246B44B800ADE539 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		51336189246B44B800ADE539 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +60,10 @@
 		513361C1246B62DA00ADE539 /* DataScenePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataScenePresenter.swift; sourceTree = "<group>"; };
 		513361C2246B62DA00ADE539 /* DataSceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSceneViewController.swift; sourceTree = "<group>"; };
 		513361C3246B62DA00ADE539 /* DataSceneViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DataSceneViewController.xib; sourceTree = "<group>"; };
+		7A0E58323AA71600BFACD19A /* Pods_FalabellaFinancieroTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FalabellaFinancieroTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0B8076389B25B6F9C05937A /* Pods_FalabellaFinancieroTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FalabellaFinancieroTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0267684471B5221280978DF /* Pods-FalabellaFinancieroTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FalabellaFinancieroTest.debug.xcconfig"; path = "Target Support Files/Pods-FalabellaFinancieroTest/Pods-FalabellaFinancieroTest.debug.xcconfig"; sourceTree = "<group>"; };
+		DEA8B03F5093531ED5B76ED1 /* Pods-FalabellaFinancieroTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FalabellaFinancieroTest.release.xcconfig"; path = "Target Support Files/Pods-FalabellaFinancieroTest/Pods-FalabellaFinancieroTest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				785FE58ED8980161D189B03F /* Pods_FalabellaFinancieroTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3560DB0BA1B200CF61FA1864 /* Pods_FalabellaFinancieroTestTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +92,8 @@
 				51336186246B44B800ADE539 /* FalabellaFinancieroTest */,
 				5133619D246B44BA00ADE539 /* FalabellaFinancieroTestTests */,
 				51336185246B44B800ADE539 /* Products */,
+				AA0C065040838E67A91FC9C1 /* Pods */,
+				B86CCEE7D74A26B176BBDDF6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -158,6 +170,27 @@
 			path = DataList;
 			sourceTree = "<group>";
 		};
+		AA0C065040838E67A91FC9C1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C0267684471B5221280978DF /* Pods-FalabellaFinancieroTest.debug.xcconfig */,
+				DEA8B03F5093531ED5B76ED1 /* Pods-FalabellaFinancieroTest.release.xcconfig */,
+				0F4C0AEBB42FD90AF6042C3C /* Pods-FalabellaFinancieroTestTests.debug.xcconfig */,
+				36DD5E0153F3E1118F734467 /* Pods-FalabellaFinancieroTestTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B86CCEE7D74A26B176BBDDF6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7A0E58323AA71600BFACD19A /* Pods_FalabellaFinancieroTest.framework */,
+				B0B8076389B25B6F9C05937A /* Pods_FalabellaFinancieroTestTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -165,9 +198,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 513361A3246B44BA00ADE539 /* Build configuration list for PBXNativeTarget "FalabellaFinancieroTest" */;
 			buildPhases = (
+				BD5E750398E05B45F7288AA5 /* [CP] Check Pods Manifest.lock */,
 				51336180246B44B800ADE539 /* Sources */,
 				51336181246B44B800ADE539 /* Frameworks */,
 				51336182246B44B800ADE539 /* Resources */,
+				724A9ACF7C87ACC8AFCA7B89 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -182,6 +217,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 513361A6246B44BA00ADE539 /* Build configuration list for PBXNativeTarget "FalabellaFinancieroTestTests" */;
 			buildPhases = (
+				1805BC3DADDD664BA8E8AE77 /* [CP] Check Pods Manifest.lock */,
 				51336196246B44BA00ADE539 /* Sources */,
 				51336197246B44BA00ADE539 /* Frameworks */,
 				51336198246B44BA00ADE539 /* Resources */,
@@ -254,6 +290,70 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1805BC3DADDD664BA8E8AE77 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FalabellaFinancieroTestTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		724A9ACF7C87ACC8AFCA7B89 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FalabellaFinancieroTest/Pods-FalabellaFinancieroTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FalabellaFinancieroTest/Pods-FalabellaFinancieroTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FalabellaFinancieroTest/Pods-FalabellaFinancieroTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD5E750398E05B45F7288AA5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FalabellaFinancieroTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		51336180246B44B800ADE539 /* Sources */ = {
@@ -420,6 +520,7 @@
 		};
 		513361A4246B44BA00ADE539 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0267684471B5221280978DF /* Pods-FalabellaFinancieroTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -437,6 +538,7 @@
 		};
 		513361A5246B44BA00ADE539 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DEA8B03F5093531ED5B76ED1 /* Pods-FalabellaFinancieroTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -454,6 +556,7 @@
 		};
 		513361A7246B44BA00ADE539 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F4C0AEBB42FD90AF6042C3C /* Pods-FalabellaFinancieroTestTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -475,6 +578,7 @@
 		};
 		513361A8246B44BA00ADE539 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36DD5E0153F3E1118F734467 /* Pods-FalabellaFinancieroTestTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
