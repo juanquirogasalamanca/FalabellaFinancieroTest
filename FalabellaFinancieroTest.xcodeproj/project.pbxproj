@@ -31,6 +31,8 @@
 		513361D4246C5D5100ADE539 /* DetailSceneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 513361D1246C5D5100ADE539 /* DetailSceneViewController.xib */; };
 		513361D8246C65E600ADE539 /* StoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513361D6246C65E600ADE539 /* StoreTableViewCell.swift */; };
 		513361D9246C65E600ADE539 /* StoreTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 513361D7246C65E600ADE539 /* StoreTableViewCell.xib */; };
+		51AC1736246D6AD300222ED1 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51AC1735246D6AD300222ED1 /* Session.swift */; };
+		51AC1738246D6B2300222ED1 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51AC1737246D6B2300222ED1 /* SessionManager.swift */; };
 		785FE58ED8980161D189B03F /* Pods_FalabellaFinancieroTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A0E58323AA71600BFACD19A /* Pods_FalabellaFinancieroTest.framework */; };
 /* End PBXBuildFile section */
 
@@ -74,6 +76,8 @@
 		513361D1246C5D5100ADE539 /* DetailSceneViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailSceneViewController.xib; sourceTree = "<group>"; };
 		513361D6246C65E600ADE539 /* StoreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreTableViewCell.swift; sourceTree = "<group>"; };
 		513361D7246C65E600ADE539 /* StoreTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoreTableViewCell.xib; sourceTree = "<group>"; };
+		51AC1735246D6AD300222ED1 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		51AC1737246D6B2300222ED1 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
 		7A0E58323AA71600BFACD19A /* Pods_FalabellaFinancieroTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FalabellaFinancieroTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0B8076389B25B6F9C05937A /* Pods_FalabellaFinancieroTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FalabellaFinancieroTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0267684471B5221280978DF /* Pods-FalabellaFinancieroTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FalabellaFinancieroTest.debug.xcconfig"; path = "Target Support Files/Pods-FalabellaFinancieroTest/Pods-FalabellaFinancieroTest.debug.xcconfig"; sourceTree = "<group>"; };
@@ -190,6 +194,7 @@
 		513361C7246C3CD900ADE539 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				513361DA246CCA1A00ADE539 /* Session */,
 				513361CB246C54DA00ADE539 /* Models */,
 				513361C8246C3CE700ADE539 /* API */,
 			);
@@ -229,6 +234,15 @@
 				513361D7246C65E600ADE539 /* StoreTableViewCell.xib */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		513361DA246CCA1A00ADE539 /* Session */ = {
+			isa = PBXGroup;
+			children = (
+				51AC1735246D6AD300222ED1 /* Session.swift */,
+				51AC1737246D6B2300222ED1 /* SessionManager.swift */,
+			);
+			path = Session;
 			sourceTree = "<group>";
 		};
 		AA0C065040838E67A91FC9C1 /* Pods */ = {
@@ -423,6 +437,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				513361BE246B592E00ADE539 /* LoginViewController.swift in Sources */,
+				51AC1736246D6AD300222ED1 /* Session.swift in Sources */,
+				51AC1738246D6B2300222ED1 /* SessionManager.swift in Sources */,
 				513361BB246B590600ADE539 /* LoginPresenter.swift in Sources */,
 				513361D2246C5D5100ADE539 /* DetailScenePresenter.swift in Sources */,
 				513361D8246C65E600ADE539 /* StoreTableViewCell.swift in Sources */,

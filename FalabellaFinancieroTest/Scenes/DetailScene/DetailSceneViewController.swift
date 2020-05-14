@@ -43,7 +43,6 @@ final class DetailSceneViewController: BaseViewController, MVPView {
     
     @IBAction func backAction(_ sender: Any) {
         router.backToListScene()
-        print("baaaaaakkkkk")
     }
     
 
@@ -56,7 +55,8 @@ private extension DetailSceneViewController{
         phoneLabel.text = _store.storePhone
         stateLabel.text = _store.siteName
         storeNameLabel.text = _store.storeName
-        openStoreLabel.text = _store.storeOpenTime
+        openStoreLabel.text = _store.storeWorkDay
+        openStoreTimeLabel.text = _store.storeOpenTime
         closeStoreTimeLabel.text = _store.storeClosetime
         storeAddressLabel.text = _store.storeAddress
     }

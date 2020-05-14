@@ -26,10 +26,8 @@ extension MVPView where Self: DetailSceneViewProtocol {
 final class DetailScenePresenter: MVPPresenter {
 
     weak var view: DetailSceneViewProtocol?
+    lazy var sessionManager: SessionManagerProtocol = Self.inject()
 
-    func viewDidLoad() {
-
-    }
 }
 
 extension DetailScenePresenter: DetailScenePresenterProtocol {

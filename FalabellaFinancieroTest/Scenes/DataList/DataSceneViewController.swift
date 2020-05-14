@@ -13,6 +13,7 @@ import UIKit
 
 protocol DataSceneViewProtocol: class {
     func updateData(stores: [StoreData])
+    func updateUserName(name: String)
 }
 
 final class DataSceneViewController: BaseViewController, MVPView {
@@ -28,9 +29,8 @@ final class DataSceneViewController: BaseViewController, MVPView {
     let tableCellID = "StoreTableViewCell"
     
 	override func viewDidLoad() {
-        setupTable()
-        presenter.fetchData()
         super.viewDidLoad()
+        setupScene()
         
     }
 
@@ -38,9 +38,18 @@ final class DataSceneViewController: BaseViewController, MVPView {
         guard let searchText = searchTextField.text else {return}
         searchData(word: searchText)
     }
+    
+    @IBAction func logoutAction(_ sender: Any) {
+        router.successLogOut()
+    }
+    
 }
 
 extension DataSceneViewController: DataSceneViewProtocol {
+    func updateUserName(name: String) {
+        userNameLabel.text = name
+    }
+    
     
     func updateData(stores: [StoreData]){
         self.stores = stores
@@ -54,7 +63,7 @@ extension DataSceneViewController: UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        self.tableView.register(UINib(nibName: tableCellID, bundle: nil), forCellReuseIdentifier: tableCellID)
+        
         let cell:StoreTableViewCell = (self.tableView.dequeueReusableCell(withIdentifier: tableCellID, for: indexPath)) as! StoreTableViewCell
 
         let store = stores[indexPath.row]
@@ -72,6 +81,12 @@ extension DataSceneViewController: UITableViewDelegate{
 }
 
 private extension DataSceneViewController {
+    
+    func setupScene(){
+        setupTable()
+        presenter.fetchData()
+    }
+    
     func showData() {
         presenter.fetchData()
     }
@@ -83,6 +98,7 @@ private extension DataSceneViewController {
     func setupTable(){
         self.tableView.delegate = self
         self.tableView.dataSource = self
+        self.tableView.register(UINib(nibName: tableCellID, bundle: nil), forCellReuseIdentifier: tableCellID)
         
     }
 }

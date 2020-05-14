@@ -56,7 +56,7 @@ extension ViewCoordinator {
 
 extension ViewCoordinator: Router {
     func successLogOut() {
-        
+        goToLogin()
     }
     
     func backToListScene() {

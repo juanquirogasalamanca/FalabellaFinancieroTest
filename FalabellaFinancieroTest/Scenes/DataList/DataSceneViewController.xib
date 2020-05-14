@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -19,8 +20,8 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello User" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Es2-XJ-P3i">
-                    <rect key="frame" x="167.5" y="40" width="79.5" height="20.5"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="\" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Es2-XJ-P3i">
+                    <rect key="frame" x="204.5" y="40" width="5.5" height="20.5"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
@@ -53,16 +54,25 @@
                         <outlet property="delegate" destination="-1" id="mlj-uk-fmo"/>
                     </connections>
                 </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ow-uD-iWu">
+                    <rect key="frame" x="374" y="35" width="30" height="30"/>
+                    <state key="normal" title="Salir"/>
+                    <connections>
+                        <action selector="logoutAction:" destination="-1" eventType="touchUpInside" id="ycn-KI-wEG"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="Es2-XJ-P3i" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="9xH-IE-PFn"/>
                 <constraint firstAttribute="trailing" secondItem="34i-dy-CD7" secondAttribute="trailing" constant="10" id="Baq-UK-xPT"/>
                 <constraint firstItem="34i-dy-CD7" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="DEy-uo-LNP"/>
+                <constraint firstItem="0ow-uD-iWu" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="35" id="H3S-oB-DuQ"/>
                 <constraint firstAttribute="trailing" secondItem="XhV-f4-V2D" secondAttribute="trailing" constant="10" id="NmZ-fo-rPQ"/>
                 <constraint firstItem="XhV-f4-V2D" firstAttribute="top" secondItem="34i-dy-CD7" secondAttribute="bottom" constant="10" id="gJD-Jz-Kec"/>
                 <constraint firstItem="34i-dy-CD7" firstAttribute="top" secondItem="Es2-XJ-P3i" secondAttribute="bottom" constant="10" id="m0V-bo-BJP"/>
                 <constraint firstAttribute="bottom" secondItem="XhV-f4-V2D" secondAttribute="bottom" constant="10" id="m67-aY-UAs"/>
+                <constraint firstAttribute="trailing" secondItem="0ow-uD-iWu" secondAttribute="trailing" constant="10" id="qJM-tr-e5r"/>
                 <constraint firstItem="XhV-f4-V2D" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="rNa-7w-UFT"/>
                 <constraint firstItem="Es2-XJ-P3i" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="40" id="weR-Cj-cDI"/>
             </constraints>
