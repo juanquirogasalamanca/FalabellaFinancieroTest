@@ -15,7 +15,7 @@ protocol UIApplicationProtocol: class {
 extension UIApplication: UIApplicationProtocol {}
 
 extension MVPView where Self: ViewCoordinator {
-    func inyect() -> UIApplicationProtocol {
+    func inject() -> UIApplicationProtocol {
         return UIApplication.shared
     }
 }

@@ -14,8 +14,8 @@ protocol LoginViewProtocol: class {
 }
 
 final class LoginViewController: BaseViewController, MVPView {
-     lazy var presenter: LoginPresenterProtocol = self.inyect()
-    lazy var router: Router = self.inyect()
+    lazy var presenter: LoginPresenterProtocol = self.inject()
+    lazy var router: Router = self.inject()
 
     @IBOutlet weak var userTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!

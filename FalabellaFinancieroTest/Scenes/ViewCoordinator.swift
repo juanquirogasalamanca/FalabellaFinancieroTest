@@ -12,12 +12,16 @@ import UIKit
 protocol ViewCoordinatorProtocol: class {
     func goToLogin()
     func goToDataScene()
-    func doToDetailScene()
+    func goToDetailScene(item: StoreData)
+    func backToDetailScene()
+    func Logout()
 }
 
 protocol Router {
     func successLogin()
-    func selectItemList()
+    func selectItemList(item: StoreData)
+    func backToListScene()
+    func successLogOut()
 }
 
 final class ViewCoordinator: MVPView {
@@ -32,7 +36,7 @@ final class ViewCoordinator: MVPView {
     }()
     let presenter: CoordinatorPresenterProtocol
     let rootNavigationController: UINavigationController = .init()
-    lazy var application: UIApplicationProtocol = self.inyect()
+    lazy var application: UIApplicationProtocol = self.inject()
 
     init(presenter: CoordinatorPresenterProtocol) {
         self.presenter = presenter
@@ -51,18 +55,35 @@ extension ViewCoordinator {
 }
 
 extension ViewCoordinator: Router {
+    func successLogOut() {
+        
+    }
+    
+    func backToListScene() {
+        backToDetailScene()
+    }
+    
+    
     func successLogin() {
         goToDataScene()
     }
     
-    func selectItemList() {
-//        TODO
+    func selectItemList(item: StoreData) {
+        goToDetailScene(item: item)
     }
     
     
 }
 
 extension ViewCoordinator: ViewCoordinatorProtocol {
+    func backToDetailScene() {
+        back()
+    }
+    
+    func Logout() {
+        
+    }
+    
     func goToLogin() {
         goTo(controller: LoginViewController())
     }
@@ -71,8 +92,10 @@ extension ViewCoordinator: ViewCoordinatorProtocol {
         goTo(controller: DataSceneViewController())
     }
     
-    func doToDetailScene() {
-//        ToDo
+    func goToDetailScene(item: StoreData) {
+        let vc: DetailSceneViewController = DetailSceneViewController()
+        vc.store = item
+        present(controller: vc)
     }
 }
 
@@ -83,18 +106,19 @@ private extension ViewCoordinator {
         rootNavigationController.pushViewController(controller, animated: rootNavigationController.topViewController != nil)
     }
     
-    func presentar(controlador: UIViewController) {
-        rootNavigationController.topViewController?.present(
-            controlador,
-            animated: true,
-            completion: nil)
+    func present(controller: UIViewController) {
+        rootNavigationController.pushViewController(controller,
+                                                    animated: false)
+    }
+    func back(){
+        rootNavigationController.popViewController(animated: true)
     }
 }
 
 // MARK: MVPVista
 
 extension MVPView {
-    func inyect() -> Router {
+    func inject() -> Router {
         return ViewCoordinator.instance
     }
 }

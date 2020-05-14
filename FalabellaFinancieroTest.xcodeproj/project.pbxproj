@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -24,6 +24,13 @@
 		513361C4246B62DA00ADE539 /* DataScenePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513361C1246B62DA00ADE539 /* DataScenePresenter.swift */; };
 		513361C5246B62DA00ADE539 /* DataSceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513361C2246B62DA00ADE539 /* DataSceneViewController.swift */; };
 		513361C6246B62DA00ADE539 /* DataSceneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 513361C3246B62DA00ADE539 /* DataSceneViewController.xib */; };
+		513361CA246C3D0E00ADE539 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513361C9246C3D0E00ADE539 /* API.swift */; };
+		513361CD246C54EF00ADE539 /* StoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513361CC246C54EF00ADE539 /* StoreData.swift */; };
+		513361D2246C5D5100ADE539 /* DetailScenePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513361CF246C5D5100ADE539 /* DetailScenePresenter.swift */; };
+		513361D3246C5D5100ADE539 /* DetailSceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513361D0246C5D5100ADE539 /* DetailSceneViewController.swift */; };
+		513361D4246C5D5100ADE539 /* DetailSceneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 513361D1246C5D5100ADE539 /* DetailSceneViewController.xib */; };
+		513361D8246C65E600ADE539 /* StoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513361D6246C65E600ADE539 /* StoreTableViewCell.swift */; };
+		513361D9246C65E600ADE539 /* StoreTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 513361D7246C65E600ADE539 /* StoreTableViewCell.xib */; };
 		785FE58ED8980161D189B03F /* Pods_FalabellaFinancieroTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A0E58323AA71600BFACD19A /* Pods_FalabellaFinancieroTest.framework */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +67,13 @@
 		513361C1246B62DA00ADE539 /* DataScenePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataScenePresenter.swift; sourceTree = "<group>"; };
 		513361C2246B62DA00ADE539 /* DataSceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSceneViewController.swift; sourceTree = "<group>"; };
 		513361C3246B62DA00ADE539 /* DataSceneViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DataSceneViewController.xib; sourceTree = "<group>"; };
+		513361C9246C3D0E00ADE539 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		513361CC246C54EF00ADE539 /* StoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreData.swift; sourceTree = "<group>"; };
+		513361CF246C5D5100ADE539 /* DetailScenePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailScenePresenter.swift; sourceTree = "<group>"; };
+		513361D0246C5D5100ADE539 /* DetailSceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailSceneViewController.swift; sourceTree = "<group>"; };
+		513361D1246C5D5100ADE539 /* DetailSceneViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailSceneViewController.xib; sourceTree = "<group>"; };
+		513361D6246C65E600ADE539 /* StoreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreTableViewCell.swift; sourceTree = "<group>"; };
+		513361D7246C65E600ADE539 /* StoreTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoreTableViewCell.xib; sourceTree = "<group>"; };
 		7A0E58323AA71600BFACD19A /* Pods_FalabellaFinancieroTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FalabellaFinancieroTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0B8076389B25B6F9C05937A /* Pods_FalabellaFinancieroTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FalabellaFinancieroTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0267684471B5221280978DF /* Pods-FalabellaFinancieroTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FalabellaFinancieroTest.debug.xcconfig"; path = "Target Support Files/Pods-FalabellaFinancieroTest/Pods-FalabellaFinancieroTest.debug.xcconfig"; sourceTree = "<group>"; };
@@ -109,6 +123,7 @@
 		51336186246B44B800ADE539 /* FalabellaFinancieroTest */ = {
 			isa = PBXGroup;
 			children = (
+				513361C7246C3CD900ADE539 /* Services */,
 				513361A9246B44DC00ADE539 /* Scenes */,
 				51336187246B44B800ADE539 /* AppDelegate.swift */,
 				51336189246B44B800ADE539 /* SceneDelegate.swift */,
@@ -131,6 +146,7 @@
 		513361A9246B44DC00ADE539 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				513361CE246C5D2900ADE539 /* DetailScene */,
 				513361C0246B62B900ADE539 /* DataList */,
 				513361B9246B583D00ADE539 /* Login */,
 				513361B6246B56C900ADE539 /* Common */,
@@ -163,11 +179,56 @@
 		513361C0246B62B900ADE539 /* DataList */ = {
 			isa = PBXGroup;
 			children = (
+				513361D5246C65C500ADE539 /* Cell */,
 				513361C1246B62DA00ADE539 /* DataScenePresenter.swift */,
 				513361C2246B62DA00ADE539 /* DataSceneViewController.swift */,
 				513361C3246B62DA00ADE539 /* DataSceneViewController.xib */,
 			);
 			path = DataList;
+			sourceTree = "<group>";
+		};
+		513361C7246C3CD900ADE539 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				513361CB246C54DA00ADE539 /* Models */,
+				513361C8246C3CE700ADE539 /* API */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		513361C8246C3CE700ADE539 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				513361C9246C3D0E00ADE539 /* API.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		513361CB246C54DA00ADE539 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				513361CC246C54EF00ADE539 /* StoreData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		513361CE246C5D2900ADE539 /* DetailScene */ = {
+			isa = PBXGroup;
+			children = (
+				513361CF246C5D5100ADE539 /* DetailScenePresenter.swift */,
+				513361D0246C5D5100ADE539 /* DetailSceneViewController.swift */,
+				513361D1246C5D5100ADE539 /* DetailSceneViewController.xib */,
+			);
+			path = DetailScene;
+			sourceTree = "<group>";
+		};
+		513361D5246C65C500ADE539 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				513361D6246C65E600ADE539 /* StoreTableViewCell.swift */,
+				513361D7246C65E600ADE539 /* StoreTableViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		AA0C065040838E67A91FC9C1 /* Pods */ = {
@@ -178,7 +239,6 @@
 				0F4C0AEBB42FD90AF6042C3C /* Pods-FalabellaFinancieroTestTests.debug.xcconfig */,
 				36DD5E0153F3E1118F734467 /* Pods-FalabellaFinancieroTestTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -275,10 +335,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				513361D4246C5D5100ADE539 /* DetailSceneViewController.xib in Resources */,
 				513361BF246B592E00ADE539 /* LoginViewController.xib in Resources */,
 				51336194246B44B900ADE539 /* LaunchScreen.storyboard in Resources */,
 				513361C6246B62DA00ADE539 /* DataSceneViewController.xib in Resources */,
 				51336191246B44B900ADE539 /* Assets.xcassets in Resources */,
+				513361D9246C65E600ADE539 /* StoreTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,7 +424,10 @@
 			files = (
 				513361BE246B592E00ADE539 /* LoginViewController.swift in Sources */,
 				513361BB246B590600ADE539 /* LoginPresenter.swift in Sources */,
+				513361D2246C5D5100ADE539 /* DetailScenePresenter.swift in Sources */,
+				513361D8246C65E600ADE539 /* StoreTableViewCell.swift in Sources */,
 				5133618C246B44B800ADE539 /* BaseViewController.swift in Sources */,
+				513361CD246C54EF00ADE539 /* StoreData.swift in Sources */,
 				513361C5246B62DA00ADE539 /* DataSceneViewController.swift in Sources */,
 				513361B5246B4E8100ADE539 /* MVP.swift in Sources */,
 				51336188246B44B800ADE539 /* AppDelegate.swift in Sources */,
@@ -370,6 +435,8 @@
 				5133618A246B44B800ADE539 /* SceneDelegate.swift in Sources */,
 				513361C4246B62DA00ADE539 /* DataScenePresenter.swift in Sources */,
 				513361B1246B4C8F00ADE539 /* ViewCoordinator.swift in Sources */,
+				513361D3246C5D5100ADE539 /* DetailSceneViewController.swift in Sources */,
+				513361CA246C3D0E00ADE539 /* API.swift in Sources */,
 				513361B8246B56E100ADE539 /* UIApplicationProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -525,6 +592,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FalabellaFinancieroTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -543,6 +611,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FalabellaFinancieroTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

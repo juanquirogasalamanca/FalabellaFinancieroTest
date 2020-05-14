@@ -13,7 +13,7 @@ protocol LoginPresenterProtocol {
 }
 
 extension MVPView where Self: LoginViewProtocol {
-    func inyect() -> LoginPresenterProtocol  {
+    func inject() -> LoginPresenterProtocol  {
         let presenter = LoginPresenter()
         presenter.view = self
         return presenter
@@ -26,7 +26,7 @@ final class LoginPresenter: MVPPresenter{
     
 }
 
-extension LoginPresenter: LoginPresenterProtocol{
+extension LoginPresenter: LoginPresenterProtocol {
     func validateUser(user: String, password: String) {
         guard let _user: String = user, let _password: String = password, _password != "" else {
             view?.showError(error: "Error No data.")
