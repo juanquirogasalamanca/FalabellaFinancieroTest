@@ -19,9 +19,8 @@ struct StoreData: Codable, Equatable {
         case storeOpenTime = "funcionamiento_hora_apertura"
         case storeClosetime = "funcionamiento_hora_cierre"
         case storeAddress = "local_direccion"
-
-        
     }
+    
     var siteName: String
     var countyName: String
     var storePhone: String

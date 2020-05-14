@@ -11,7 +11,6 @@
 import UIKit
 
 protocol DetailSceneViewProtocol: class {
-    func loadStoreData()
 }
 
 final class DetailSceneViewController: BaseViewController, MVPView {
@@ -45,7 +44,6 @@ final class DetailSceneViewController: BaseViewController, MVPView {
         router.backToListScene()
     }
     
-
 }
 
 private extension DetailSceneViewController{
@@ -63,9 +61,5 @@ private extension DetailSceneViewController{
 }
 
 extension DetailSceneViewController: DetailSceneViewProtocol {
-    func loadStoreData() {
-        
-    }
-    
-    
+
 }

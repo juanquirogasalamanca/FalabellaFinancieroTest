@@ -71,8 +71,6 @@ extension ViewCoordinator: Router {
     func selectItemList(item: StoreData) {
         goToDetailScene(item: item)
     }
-    
-    
 }
 
 extension ViewCoordinator: ViewCoordinatorProtocol {

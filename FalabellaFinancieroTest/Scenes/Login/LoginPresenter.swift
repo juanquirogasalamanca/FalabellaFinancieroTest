@@ -27,8 +27,6 @@ final class LoginPresenter: MVPPresenter{
     func sceneLoad() {
         sessionManager.saveSession(session: DataMocks.mockUser)
     }
-    
-    
 }
 
 extension LoginPresenter: LoginPresenterProtocol {
@@ -45,8 +43,6 @@ extension LoginPresenter: LoginPresenterProtocol {
             return}
         makeLogin()
     }
-    
-    
 }
 
 private extension LoginPresenter{

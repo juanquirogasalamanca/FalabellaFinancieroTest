@@ -21,8 +21,6 @@ final class LoginViewController: BaseViewController, MVPView {
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var errorLabel: UILabel!
     
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 

@@ -42,7 +42,6 @@ extension DataScenePresenter: DataScenePresenterProtocol {
             case .failure(let error):
                 print(error)
             }
-
         }
     }
     

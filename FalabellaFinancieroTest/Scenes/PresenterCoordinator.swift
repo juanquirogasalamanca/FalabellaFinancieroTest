@@ -14,14 +14,10 @@ protocol CoordinatorPresenterProtocol: class {
 
 final class CoordinatorPresenter: MVPPresenter {
     weak var view: ViewCoordinatorProtocol?
-    
-    
 }
 
 extension CoordinatorPresenter: CoordinatorPresenterProtocol {
     func handleStartApp() {
         view?.goToLogin()
     }
-    
-    
 }

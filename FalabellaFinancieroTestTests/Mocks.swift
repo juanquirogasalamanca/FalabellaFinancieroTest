@@ -15,12 +15,3 @@ struct MockData {
     static let mockStore = StoreData(siteName: "QUILLOTA", countyName: "QUILLOTA", storePhone: "+5633269467", storeName: "CRUZ VERDE ", storeWorkDay: "jueves", storeOpenTime: "08:30:00", storeClosetime: "21:30:00", storeAddress: "OHIGGINS 195, LOCAL 1")
 }
 
-
-class MockAPI: APIProtocol {
-    
-    var response: ServiceResponse<Category> = .success(data: [MockData.mockStore])
-    
-    func getRequest(requestURL: String, completion: @escaping (ServiceResponse<Category>) -> Void) {
-        completion(response)
-    }
-}
