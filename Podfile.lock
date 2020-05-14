@@ -1,20 +1,33 @@
 PODS:
   - Alamofire (5.1.0)
   - CryptoSwift (1.2.0)
+  - Mockingjay (3.0.0-alpha.1):
+    - Mockingjay/Core (= 3.0.0-alpha.1)
+    - Mockingjay/XCTest (= 3.0.0-alpha.1)
+  - Mockingjay/Core (3.0.0-alpha.1):
+    - URITemplate (~> 3.0)
+  - Mockingjay/XCTest (3.0.0-alpha.1):
+    - Mockingjay/Core
+  - URITemplate (3.0.0)
 
 DEPENDENCIES:
   - Alamofire
   - CryptoSwift (~> 1.2.0)
+  - Mockingjay (~> 3.0.0-alpha.1)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
     - CryptoSwift
+    - Mockingjay
+    - URITemplate
 
 SPEC CHECKSUMS:
   Alamofire: 9d5c5f602928e512395b30950c5984eca840093c
   CryptoSwift: 40e374e45291d8dceedcb0d6184da94533eaabdf
+  Mockingjay: 0f7c5aa49c7f1b95621cee3c79b557141f5a225c
+  URITemplate: 58e0d47f967006c5d59888af5356c4a8ed3b197d
 
-PODFILE CHECKSUM: c2ca01651050e3b507754f518d369facb5ac12ab
+PODFILE CHECKSUM: 51ec0f40c504d481581b52449659dcbdc7359e59
 
 COCOAPODS: 1.7.5

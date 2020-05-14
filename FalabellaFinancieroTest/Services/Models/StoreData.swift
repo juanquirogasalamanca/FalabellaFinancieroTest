@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct StoreData: Codable {
+struct StoreData: Codable, Equatable {
     
     enum CodingKeys: String, CodingKey {
         case siteName = "localidad_nombre"

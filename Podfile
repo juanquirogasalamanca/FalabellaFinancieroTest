@@ -6,6 +6,7 @@ target 'FalabellaFinancieroTest' do
   use_frameworks!
 	pod 'Alamofire'
   pod 'CryptoSwift', '~> 1.2.0'
+  pod 'Mockingjay' , '~>3.0.0-alpha.1'
 
   # Pods for FalabellaFinancieroTest
 

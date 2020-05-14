@@ -10,7 +10,14 @@ import Foundation
 import Alamofire
 
 protocol APIProtocol {
-    func getRequest(requestURL: String , completion: @escaping ([StoreData]) -> Void)
+    func getRequest(requestURL: String , completion: @escaping (ServiceResponse<Category>) -> Void)
+}
+
+typealias HeadersResponse = [AnyHashable: Any]
+
+enum ServiceResponse<Model> {
+    case success(data: [StoreData])
+    case failure(error: Error)
 }
 
 extension MVPPresenter {
@@ -19,7 +26,7 @@ extension MVPPresenter {
       }
   }
 
-final class API{
+class API{
  
    static let instance = API()
     
@@ -35,17 +42,22 @@ final class API{
 
 }
 extension API: APIProtocol{
-    func getRequest(requestURL: String , completion: @escaping ([StoreData]) -> Void){
+    
+    func getRequest(requestURL: String , completion: @escaping (ServiceResponse<Category>) -> Void){
         AF.request(requestURL).responseJSON { response in
-            guard let data = response.data else { return }
-               do {
-                   let decoder = JSONDecoder()
-                   let dataResponse = try decoder.decode(ServerResponse.self, from: data)
-                completion(dataResponse.result.stores)
-               } catch let error {
-                   print(error)
-                   completion([])
-               }
+            if let data = response.data{
+                do {
+                        let decoder = JSONDecoder()
+                        let dataResponse = try decoder.decode(ServerResponse.self, from: data)
+                            completion(.success(data: dataResponse.result.stores))
+                        } catch let error {
+                            completion(.failure(error: error))
+                      }
+            } else {
+                guard let error = response.error else { return }
+                completion(.failure(error: error))
+            }
+              
         }
     }
 }
@@ -63,7 +75,6 @@ struct ResultContent: Codable{
     }
     var stores: [StoreData]
 }
-
 
 
 

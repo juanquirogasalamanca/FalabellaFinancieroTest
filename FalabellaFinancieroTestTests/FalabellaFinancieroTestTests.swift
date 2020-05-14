@@ -10,19 +10,36 @@ import XCTest
 @testable import FalabellaFinancieroTest
 
 class FalabellaFinancieroTestTests: XCTestCase {
-
+    var sut: LoginPresenter?
+    var mockUser:Session?
+    
     override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        super.setUp()
+        sut = LoginPresenter()
+        mockUser = MockData.mockUser
     }
 
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        sut = nil
+        mockUser = nil
+        super.tearDown()
     }
-
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    
+    func testLoginUserSuccess(){
+//        given
+        sut?.validateUser(user: mockUser!.userName, password: mockUser!.password)
+//        when
+        let user = sut?.dataSession
+//        then
+        XCTAssertEqual(user, mockUser, "Login Success")
     }
-
+    func testLoginUserFail(){
+//        given
+        sut?.validateUser(user: "", password: "")
+//        when
+        let user = sut?.dataSession
+//        then
+        XCTAssertNotEqual(user , mockUser, "Login Fail")
+    }
 
 }

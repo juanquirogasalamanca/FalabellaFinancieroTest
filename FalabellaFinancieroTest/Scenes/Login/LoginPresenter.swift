@@ -23,7 +23,7 @@ extension MVPView where Self: LoginViewProtocol {
 final class LoginPresenter: MVPPresenter{
     weak var view: LoginViewProtocol?
     lazy var sessionManager: SessionManagerProtocol = Self.inject()
-    
+    var dataSession : Session?
     func sceneLoad() {
         sessionManager.saveSession(session: DataMocks.mockUser)
     }
@@ -38,9 +38,9 @@ extension LoginPresenter: LoginPresenterProtocol {
             view?.showError(error: "Error No data.")
             return
         }
-        let data = Session(userName: _user, password: _password)
+        dataSession = Session(userName: _user, password: _password)
         
-        guard data == sessionManager.getSession() else {
+        guard dataSession == sessionManager.getSession() else {
             view?.showError(error: "Incorrect User or Password")
             return}
         makeLogin(user: _user, password: _password)

@@ -31,8 +31,12 @@
 		513361D4246C5D5100ADE539 /* DetailSceneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 513361D1246C5D5100ADE539 /* DetailSceneViewController.xib */; };
 		513361D8246C65E600ADE539 /* StoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513361D6246C65E600ADE539 /* StoreTableViewCell.swift */; };
 		513361D9246C65E600ADE539 /* StoreTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 513361D7246C65E600ADE539 /* StoreTableViewCell.xib */; };
+		516B6A5B246DEA48004AB166 /* response.json in Resources */ = {isa = PBXBuildFile; fileRef = 516B6A5A246DEA48004AB166 /* response.json */; };
+		516B6A5D246DF598004AB166 /* badResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 516B6A5C246DF598004AB166 /* badResponse.json */; };
 		51AC1736246D6AD300222ED1 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51AC1735246D6AD300222ED1 /* Session.swift */; };
 		51AC1738246D6B2300222ED1 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51AC1737246D6B2300222ED1 /* SessionManager.swift */; };
+		51AC173A246DC5B600222ED1 /* Mocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51AC1739246DC5B600222ED1 /* Mocks.swift */; };
+		51AC173C246DCE9700222ED1 /* LoadListTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51AC173B246DCE9700222ED1 /* LoadListTest.swift */; };
 		785FE58ED8980161D189B03F /* Pods_FalabellaFinancieroTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A0E58323AA71600BFACD19A /* Pods_FalabellaFinancieroTest.framework */; };
 /* End PBXBuildFile section */
 
@@ -76,8 +80,12 @@
 		513361D1246C5D5100ADE539 /* DetailSceneViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailSceneViewController.xib; sourceTree = "<group>"; };
 		513361D6246C65E600ADE539 /* StoreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreTableViewCell.swift; sourceTree = "<group>"; };
 		513361D7246C65E600ADE539 /* StoreTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoreTableViewCell.xib; sourceTree = "<group>"; };
+		516B6A5A246DEA48004AB166 /* response.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = response.json; sourceTree = "<group>"; };
+		516B6A5C246DF598004AB166 /* badResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = badResponse.json; sourceTree = "<group>"; };
 		51AC1735246D6AD300222ED1 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		51AC1737246D6B2300222ED1 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		51AC1739246DC5B600222ED1 /* Mocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mocks.swift; sourceTree = "<group>"; };
+		51AC173B246DCE9700222ED1 /* LoadListTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadListTest.swift; sourceTree = "<group>"; };
 		7A0E58323AA71600BFACD19A /* Pods_FalabellaFinancieroTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FalabellaFinancieroTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0B8076389B25B6F9C05937A /* Pods_FalabellaFinancieroTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FalabellaFinancieroTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0267684471B5221280978DF /* Pods-FalabellaFinancieroTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FalabellaFinancieroTest.debug.xcconfig"; path = "Target Support Files/Pods-FalabellaFinancieroTest/Pods-FalabellaFinancieroTest.debug.xcconfig"; sourceTree = "<group>"; };
@@ -141,8 +149,11 @@
 		5133619D246B44BA00ADE539 /* FalabellaFinancieroTestTests */ = {
 			isa = PBXGroup;
 			children = (
+				516B6A59246DEA27004AB166 /* JSON */,
 				5133619E246B44BA00ADE539 /* FalabellaFinancieroTestTests.swift */,
 				513361A0246B44BA00ADE539 /* Info.plist */,
+				51AC1739246DC5B600222ED1 /* Mocks.swift */,
+				51AC173B246DCE9700222ED1 /* LoadListTest.swift */,
 			);
 			path = FalabellaFinancieroTestTests;
 			sourceTree = "<group>";
@@ -243,6 +254,15 @@
 				51AC1737246D6B2300222ED1 /* SessionManager.swift */,
 			);
 			path = Session;
+			sourceTree = "<group>";
+		};
+		516B6A59246DEA27004AB166 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				516B6A5A246DEA48004AB166 /* response.json */,
+				516B6A5C246DF598004AB166 /* badResponse.json */,
+			);
+			path = JSON;
 			sourceTree = "<group>";
 		};
 		AA0C065040838E67A91FC9C1 /* Pods */ = {
@@ -362,6 +382,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				516B6A5D246DF598004AB166 /* badResponse.json in Resources */,
+				516B6A5B246DEA48004AB166 /* response.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,7 +483,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51AC173C246DCE9700222ED1 /* LoadListTest.swift in Sources */,
 				5133619F246B44BA00ADE539 /* FalabellaFinancieroTestTests.swift in Sources */,
+				51AC173A246DC5B600222ED1 /* Mocks.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

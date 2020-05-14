@@ -34,16 +34,31 @@ extension DataScenePresenter: DataScenePresenterProtocol {
   
     func searchData(word: String) {
         let url = API.Constants.searchURL + word
-        apiRequest.getRequest(requestURL: url) { (response) in
-           self.view?.updateData(stores: response)
+        apiRequest.getRequest(requestURL: url) { [weak self] (response) in
+
+            switch response{
+            case .success(let data):
+                self?.view?.updateData(stores: data)
+            case .failure(let error):
+                print(error)
+            }
+
         }
     }
     
     func fetchData() {
-        apiRequest.getRequest(requestURL: API.Constants.listDataURL) { (response) in
-            self.view?.updateData(stores: response)
-            guard let user = self.getUserName() else { return }
-            self.view?.updateUserName(name: user)
+        apiRequest.getRequest(requestURL: API.Constants.listDataURL) { [weak self] (response) in
+            
+            switch response{
+                
+            case .success(let data):
+                self?.view?.updateData(stores: data)
+            case .failure(let error):
+                print(error)
+            }
+            
+            guard let user = self?.getUserName() else { return }
+            self?.view?.updateUserName(name: user)
         }
     }
 

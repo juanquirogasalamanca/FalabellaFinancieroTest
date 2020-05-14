@@ -1,0 +1,63 @@
+{
+    "help": "http://datos.gob.cl/api/3/action/help_show?name=datastore_search",
+    "success": true,
+    "result": {
+        "resource_id": "a60f93af-6a8a-45b6-85ff-267f5dd37ad6",
+        "fields": [{
+            "type": "int4",
+            "id": "_id"
+        }, {
+            "type": "text",
+            "id": "fecha"
+        }, {
+            "type": "numeric",
+            "id": "local_id"
+        }, {
+            "type": "numeric",
+            "id": "fk_region"
+        }, {
+            "type": "numeric",
+            "id": "fk_comuna"
+        }, {
+            "type": "numeric",
+            "id": "fk_localidad"
+        }, {
+            "type": "text",
+            "id": "local_nombre"
+        }, {
+            "type": "text",
+            "id": "comuna_nombre"
+        }, {
+            "type": "text",
+            "id": "localidad_nombre"
+        }, {
+            "type": "text",
+            "id": "local_direccion"
+        }, {
+            "type": "text",
+            "id": "funcionamiento_hora_apertura"
+        }, {
+            "type": "text",
+            "id": "funcionamiento_hora_cierre"
+        }, {
+            "type": "text",
+            "id": "local_telefono"
+        }, {
+            "type": "text",
+            "id": "local_lat"
+        }, {
+            "type": "text",
+            "id": "local_lng"
+        }, {
+            "type": "text",
+            "id": "funcionamiento_dia"
+        }],
+        "_links": {
+            "start": "/api/action/datastore_search?limit=5&resource_id=a60f93af-6a8a-45b6-85ff-267f5dd37ad6",
+            "next": "/api/action/datastore_search?offset=5&limit=5&resource_id=a60f93af-6a8a-45b6-85ff-267f5dd37ad6"
+        },
+        "limit": 5,
+        "total": 2977
+    }
+}
+
