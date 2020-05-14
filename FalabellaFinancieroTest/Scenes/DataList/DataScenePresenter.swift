@@ -58,7 +58,7 @@ extension DataScenePresenter: DataScenePresenterProtocol {
             }
             
             guard let user = self?.getUserName() else { return }
-            self?.view?.updateUserName(name: user)
+            self?.view?.updateUserName(name: "Hola " + user)
         }
     }
 

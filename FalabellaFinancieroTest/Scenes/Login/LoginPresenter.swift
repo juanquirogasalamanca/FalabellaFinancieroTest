@@ -34,23 +34,24 @@ final class LoginPresenter: MVPPresenter{
 extension LoginPresenter: LoginPresenterProtocol {
     
     func validateUser(user: String, password: String) {
-        guard let _user: String = user, let _password: String = password, _password != "" else {
+        guard  user != "", password != "" else {
             view?.showError(error: "Error No data.")
             return
         }
-        dataSession = Session(userName: _user, password: _password)
+        dataSession = Session(userName: user, password: password)
         
         guard dataSession == sessionManager.getSession() else {
             view?.showError(error: "Incorrect User or Password")
             return}
-        makeLogin(user: _user, password: _password)
+        makeLogin()
     }
     
     
 }
 
 private extension LoginPresenter{
-    func makeLogin(user: String , password: String){
+    func makeLogin(){
+        view?.showError(error: "Ingresa tu usuario y tu contraseña")
         view?.goToList()
     }
 }
